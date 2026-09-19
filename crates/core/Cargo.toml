@@ -1,0 +1,29 @@
+[package]
+name = "lekhai"
+description = "Lekhai core — English to Nepali transliteration engine."
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+repository.workspace = true
+readme = "README.md"
+keywords = ["nepali", "transliteration", "devanagari", "fst", "keyboard"]
+categories = ["text-processing", "localization"]
+rust-version = "1.74"
+
+include = [
+    "src/**/*",
+    "tests/**/*",
+    "README.md",
+    "LICENSE",
+    "assets/translit.fst",
+    "assets/lexicon.fst",
+    "assets/vocab.json",
+    "assets/rules.json",
+    "assets/context.fst",
+    "assets/context-words.tsv",
+]
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
+rustfst = "1.3.1"

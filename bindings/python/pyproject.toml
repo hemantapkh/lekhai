@@ -1,0 +1,54 @@
+[build-system]
+requires = ["maturin>=1.5,<2"]
+build-backend = "maturin"
+
+[project]
+name = "lekhai"
+description = "Lekhai — English to Nepali transliteration engine."
+requires-python = ">=3.8"
+license = "MIT"
+license-files = ["LICENSE"]
+readme = "README.md"
+authors = [{ name = "Hemanta Pokharel" }]
+keywords = ["nepali", "transliteration", "devanagari", "fst", "nlp"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Natural Language :: Nepali",
+  "Programming Language :: Rust",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Typing :: Typed",
+  "Topic :: Text Processing :: Linguistic",
+]
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://github.com/hemantapkh/lekhai"
+Repository = "https://github.com/hemantapkh/lekhai"
+Issues = "https://github.com/hemantapkh/lekhai/issues"
+
+[tool.maturin]
+python-source = "python"
+module-name = "lekhai._lekhai"
+include = [
+  "python/lekhai/assets/translit.fst",
+  "python/lekhai/assets/lexicon.fst",
+  "python/lekhai/assets/vocab.json",
+  "python/lekhai/assets/rules.json",
+  "python/lekhai/assets/context.fst",
+  "python/lekhai/assets/context-words.tsv",
+]
+exclude = ["python/lekhai/__pycache__/**/*", "**/.DS_Store"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S101"] # assert is how a test asserts
+
+[dependency-groups]
+dev = ["pytest>=7"]
