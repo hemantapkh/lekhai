@@ -26,3 +26,7 @@ rustc-ice-*.txt
 .DS_Store
 
 out/
+
+# data/ and pipeline/ are Python too; bindings/python/.gitignore covers only itself.
+__pycache__/
+*.py[cod]
