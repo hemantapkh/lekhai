@@ -3,9 +3,6 @@
 //! The layer that guarantees an answer: `T ∘ L` returns nothing for a name, a typo or
 //! anything outside the lexicon, and these rules always produce something. Also the
 //! whole path for digits and punctuation.
-//!
-//! `SIGN` and `LAM` are in the file but not read here: `pipeline/` applies them when it
-//! builds `T` and `lexicon.fst`.
 
 use crate::{Error, Result};
 use serde::Deserialize;
