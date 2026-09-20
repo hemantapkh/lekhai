@@ -1,0 +1,41 @@
+Third-party data
+
+Downloaded by fetch.py, not stored here:
+
+  Aksharantar, Nepali (AI4Bharat)
+    https://huggingface.co/datasets/ai4bharat/Aksharantar
+    CC BY for the manually collected pairs, CC0 for the rest.
+
+  Leipzig Corpora Collection: nep_newscrawl_2016_300K, nep-np_web_2015_1M,
+  nep_news_2020_300K, nep_wikipedia_2021_100K
+    https://wortschatz-leipzig.de/en/download/Nepali
+    CC BY.
+
+Stored here:
+
+  colloquial_pairs.tsv includes pairs from SushilShrestha/NepaliTransliteralDataset
+    https://github.com/SushilShrestha/NepaliTransliteralDataset
+    MIT, as stated by the repository's README badge (the repository has no
+    LICENSE file):
+
+    MIT License
+
+    Copyright (c) 2016 Sushil Shrestha
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
