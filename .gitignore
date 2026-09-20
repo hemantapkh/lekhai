@@ -24,3 +24,5 @@ rustc-ice-*.txt
 #.idea/
 
 .DS_Store
+
+out/
